@@ -1,46 +1,44 @@
 function durchmesser() {
-  let radiusr = document.getElementById("radiusr").value;
-  let umfangU = document.getElementById("umfangU").value;
-  radiusr = parseFloat(radiusr);
-  console.log(radiusr);
-  umfangU = parseFloat(umfangU);
-  console.log(umfangU);
+  let radius = document.getElementById("radiusInput").value;
+  let umfang = document.getElementById("umfangInput").value;
 
-  durchmesserdvonradius = (radiusr * 2).toFixed(2);
-  console.log(durchmesserdvonradius);
+  radius = parseFloat(radius);
+  console.log(radius);
+  umfang = parseFloat(umfang);
+  console.log(umfang);
 
-  durchmesserdvonUmfang = (umfangU / Math.PI).toFixed(2);
-  console.log(durchmesserdvonUmfang);
+  let durchmesserVonRadius = (radius * 2).toFixed(2);
+  console.log(durchmesserVonRadius);
 
-  document.getElementById("durchmesserdvonradiusOutput").value =
-    durchmesserdvonradius;
+  let durchmesserVonUmfang = (umfang / Math.PI).toFixed(2);
+  console.log(durchmesserVonUmfang);
 
-  document.getElementById("durchmesserdvonUmfangOutput").value =
-    durchmesserdvonUmfang;
+  document.getElementById("durchmesserOutput").textContent = durchmesserVonRadius;
+  document.getElementById("durchmesserOutput2").textContent = durchmesserVonUmfang;
 }
 
 function Umfang() {
-  let radiusr = document.getElementById("radiusr").value;
-  radiusr = parseFloat(radiusr);
+  let radius = document.getElementById("radiusUmfangInput").value;
+  radius = parseFloat(radius);
 
-  umfangvonRadius = (radiusr * 2 * Math.PI).toFixed(2);
-  document.getElementById("umfangvonRadiusOutput").value = umfangvonRadius;
+  let umfangVonRadius = (2 * radius * Math.PI).toFixed(2);
+  document.getElementById("umfangOutput").textContent = umfangVonRadius;
 }
 
 function Pythagoras() {
-  let Katheteb = document.getElementById("Katheteb").value;
-  let Hypothenusec = document.getElementById("Hypothenusec").value;
+  let katheteB = document.getElementById("KathetebInput").value;
+  let hypothenuseC = document.getElementById("HypothenusecInput").value;
 
-  Katheteb = parseInt(Katheteb);
-  console.log(Katheteb);
+  katheteB = parseFloat(katheteB);
+  console.log(katheteB);
 
-  Hypothenusec = parseInt(Hypothenusec);
-  console.log(Hypothenusec);
+  hypothenuseC = parseFloat(hypothenuseC);
+  console.log(hypothenuseC);
 
-  Kathetea = Math.sqrt(
-    Hypothenusec * Hypothenusec - Katheteb * Katheteb
-  ).toFixed(2);
-  console.log(Kathetea);
+  let katheteA = Math.sqrt(hypothenuseC * hypothenuseC - katheteB * katheteB).toFixed(2);
+  console.log(katheteA);
 
-  document.getElementById("KatheteaOutput").value = Kathetea;
+  document.getElementById("KatheteaOutput").textContent = katheteA;
 }
+
+// Add additional functions for square calculations here if needed
