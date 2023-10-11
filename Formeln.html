@@ -5,6 +5,9 @@
   <script src="script.js"></script>
   <title>Formeln</title> 
   <link rel="stylesheet" href="Design.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </head>
 
@@ -14,17 +17,66 @@
 
   </header>
 
-  <nav id = "navibereich">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-white ">
     <a href="Lernwebseite.html"> <img src="logo.png"></a>
-      <ul>
-        <li><a href="Lernwebseite.html">Startseite</a></li>
-        <li><a class="active" href="Formeln.html"> Formeln</a><br></li>
-        <li><a href="Tipps.html"> Tipps</a><br></li>
-        <li><a href="kontakt.html"> Kontakt</a><br></li>
-        <li><a href="Standort.html"> Standort</a><br></li>
-      </ul>
-</nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="Formeln.html" style="color: black;">Formeln</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="Lernwebseite.html" style="color: black;">Home</a>
+            </li>
+              <li class="nav-item" >
+                  <a class="nav-link" href="Standort.html" style="color: black;">Standort</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Tipps.html" style="color: black;">Tipps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html" style="color: black;">Kontakt</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
 
+<marquee id="text_formeln" loop="0" behavior="scroll" class="blink">
+      Diese Webseite soll dazu dienen, beliebige Formeln auszurechnen. 
+      Hier hast du eine Übersicht über die wichtigsten Formeln, auf die du stoßen wirst.
+</marquee>
+
+<div class="container" style="margin: auto; margin-top: 300px;">
+  <div class="row centered">
+      <div class="col-sm-4">
+          <div class="container p-3" style="background-color:rgb(106, 179, 211); padding-bottom:100%">
+              <div class="card-body">
+                  <h5 class="card-title" href="Dreieck.html" style="color:black">Formel Dreieck</h5>
+                  <a href="Dreieck.html" class="btn btn-primary">Lesen</a>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="container p-3" style="background-color:rgb(123, 203, 238); padding-bottom:100%">
+              <div class="card-body">
+                  <h5 class="card-title" href="Quadrate.html" style="color:black">Formel Quadrate</h5>
+                  <a href="Quadrate.html" class="btn btn-primary">Lesen</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="container p-3" style="background-color:rgb(158, 207, 228); padding-bottom:100%">
+              <div class="card-body">
+                  <h5 class="card-title" href="Kreis.html" style="color: black;">Formel Kreis</h5>
+                  <a href="Kreis.html" class="btn btn-primary">Lesen</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <main id = "hauptbereich">
 
 
@@ -35,82 +87,7 @@
 
 
 <br />
-    <marquee id="text_formeln" loop="0" behavior="scroll" class="blink">
-      Diese Webseite soll dazu dienen, beliebige Formeln auszurechnen. 
-      Hier hast du eine Übersicht über die wichtigsten Formeln, auf die du stoßen wirst.
-    </marquee>
 
-    <h3>Kreis:</h3>
-
-    <details>
-      <summary>Durchmesser</summary>
-      <p>
-        Um den Durchmesser zu berechnen, benötigt es den Radius: <br />
-        Durchmesser = d <br />
-        d = 2 &times; r<br />
-        <input type="number" id="radiusInput" onchange="durchmesser()" placeholder="Radius" name="Radius" />
-        &times; 2 =
-        <output name="durchmesserOutput" id="durchmesserOutput" for="durchmesser"></output><br /><br />
-        Der Durchmesser kann auch mit dem Umfang berechnet werden: <br />
-        d = U &div; &pi; <br />
-        <input type="number" id="umfangInput" onchange="durchmesser()" placeholder="Umfang" name="Umfang" />
-        =
-        <output name="durchmesserOutput2" id="durchmesserOutput2" for="durchmesser"></output>
-      </p>
-    </details>
-
-    <details>
-      <summary>Umfang</summary>
-      <p>
-        Umfang = U <br />
-        U = 2 &times; r &times; &pi; <br />
-        <input type="number" id="radiusUmfangInput" onchange="Umfang()" placeholder="Radius" name="Radius" /> <br>
-        =
-        <output name="umfangOutput" id="umfangOutput" for="umfang"></output>
-        U = d &times; &pi;<br />
-      </p>
-    </details>
-
-    <details>
-      <summary>Radius</summary>
-      <p>
-        Radius = r <br />
-        r = &frac12; &times; d
-        <br />
-      </p>
-    </details>
-
-    <details>
-      <summary>Volumen</summary>
-      <p>
-        Volumen = V <br />
-        V = &pi; &times; r&sup2; &times; h
-        <br />
-      </p>
-    </details>
-
-    <details>
-      <summary>Grundfläche</summary>
-      <p>
-        Grundfläche = G <br />
-        G = &pi; &times; r&sup2; <br />
-      </p>
-    </details>
-
-    <h3>Formeln von Quadraten</h3>
-
-    <!-- Add details for other shapes here -->
-
-    <p>
-      <br /><br /><br />
-      Um die Seite a zu berechnen ist die Kathete b nötig:<br />
-    </p>
-    <input type="number" id="KathetebInput" onchange="Pythagoras();" placeholder="Länge der Kathete b in cm" name="Länge der Kathete b" />
-    <p><br />Die Hypotenuse c wird benötigt<br /></p>
-    <input type="number" id="HypothenusecInput" onchange="Pythagoras();" placeholder="Länge der Hypotenuse c" name="Länge der Hypotenuse c" />
-    = <output name="KatheteaOutput" id="KatheteaOutput" for="Kathetea"></output>
-  </div>
-</div>
-<a href="#kopfbereich"> <em> Nach oben</em></a>
+    
 </body>
 </html>
