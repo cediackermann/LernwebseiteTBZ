@@ -67,21 +67,6 @@ function Grundflaeche() {
   document.getElementById("grundflaecheOutput").textContent = grundflaeche;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function Pythagoras() {
   let katheteB = document.getElementById("KathetebInput").value;
   let hypothenuseC = document.getElementById("HypothenusecInput").value;
@@ -98,4 +83,4 @@ function Pythagoras() {
   document.getElementById("KatheteaOutput").textContent = katheteA;
 }
 
-// Add additional functions for square calculations here if needed
+
