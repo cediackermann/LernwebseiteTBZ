@@ -1,8 +1,4 @@
-
-test test
-
-
-function durchmesser() {
+function Durchmesser() {
   let radius = document.getElementById("radiusInput").value;
   let umfang = document.getElementById("umfangInput").value;
 
