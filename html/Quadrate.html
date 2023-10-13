@@ -3,7 +3,9 @@
 
 <head>
   <link rel="stylesheet" href="./../css/Tipps.css" />
-  <script src="./../Scripts/quadrate.js"></script>
+  <script src="./../Scripts/Diagonale.js"></script>
+  <script src="./../Scripts/Flaeche.js"></script>
+  <script src="./../Scripts/Umfang.js"></script>
   <title>Tipps</title>
   <link rel="stylesheet" href="./../css/DesignLernwebseite.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,22 +20,26 @@
     <div>
       <p>Diagonale:</p>
       <input type="number" id="seiteDiagonaleInput" onchange="Diagonale()" placeholder="Seite a">
-      <output name="diagonaleOutput" id="diagonaleOutput" for="diagonale"></output>
+      <output name="diagonaleOutput" id="diagonaleOutput0" for="diagonale"></output>
       <input type="number" id="flaecheDiagonaleInput" onchange="Diagonale()" placeholder="Fläche">
-      <output name="diagonaleOutput" id="diagonaleOutput" for="diagonale"></output>
+      <output name="diagonaleOutput" id="diagonaleOutput1" for="diagonale"></output>
     </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="./../images/Quadrat_Fläche_Diagonale.png" class="card-img-top" alt="Kreis Radius">
   </div>
 
   <div class="card" style="width: 18rem;">
     <img src="./../images/Quadrat_Fläche.png" class="card-img-top" alt="Kreis Radius">
+    <input type="number" id="seiteFlaecheInput" onchange="Flaeche()" placeholder="Seite">
+    <output name="flaecheOutput" id="flaecheOutput0" for="flaeche"></output>
+    <input type="number" id="diagonaleFlaecheInput" onchange="Flaeche()" placeholder="Diagonale">
+    <output name="flaecheOutput" id="flaecheOutput1" for="flaeche"></output>
   </div>
 
   <div class="card" style="width: 18rem;">
     <img src="./../images/Quadrat_Umfang.png" class="card-img-top" alt="Kreis Radius">
-  </div>
+    <input type="number" id="seiteUmfangInput" onchange="Umfang()" placeholder="Seite">
+    <output name="umfangOutput" id="umfangOutput0" for="umfang"></output>
+    <input type="number" id="diagonaleUmfangInput" onchange="Umfang()" placeholder="Diagonale">
+    <output name="umfangOutput" id="umfangOutput1" for="umfang"></output>
   </div>
 
   <a href="#kopfbereich"> <em> Nach oben</em></a>
