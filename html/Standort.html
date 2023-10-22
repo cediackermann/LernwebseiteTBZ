@@ -36,52 +36,47 @@
                   <a class="nav-link" href="./../html/Tipps.html">Tipps</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./../html/Tipps.html">Kontakt</a>
+                <a class="nav-link" href="./../html/kontakt.html">Kontakt</a>
               </li>
           </ul>
       </div>
     </nav>
 
-<h1>HB Zürich Map</h1>
+    <h1>HB Zürich Map</h1>
 
-  <!-- Map container -->
-  <div id="googleMap"></div>
+    <div id="googleMap"></div>
+  
+    <script>
+      function myMap() {
 
-  <script>
-    function myMap() {
-      // Create a LatLng object for HB Zürich
-      var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
-
-      var mapProp = {
-        center: hbZurich,
-        zoom: 15, // Adjust the zoom level as needed
-      };
-
-      // Create a new map centered at HB Zürich
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-      // Add a marker at HB Zürich
-      var marker = new google.maps.Marker({
-        position: hbZurich,
-        map: map,
-        title: "HB Zürich"
-      });
-    }
-  </script>
-
-  <!-- Include the Google Maps API with your actual API key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&callback=myMap"></script>
-
-<h3>Wir sind sehr glücklich darüber, seit dem Jahr 2022 unseren Standort am HB Zürich zu haben.<br> Dort geben wir auch
-    differente Kurse, seien es Geometrie oder Algebra Kurse. Dazu aber mehr auf der Kontaktseite.<br>
-    Ebenso besitzen wir einen kleinen Shop, wo wir Formelbücher und Aufgabenhefter verkaufen.<br>
-    Kommen sie vorbei!<br><br><br><br>
-</h3>
-
-<!--<h3>Standort (klicken sie, um zur Karte zu gelangen):</h3>
-<a href="https://www.google.com/maps/place/Z%C3%BCrich+HB/@47.4158899,8.5121677,13z/data=!4m10!1m2!2m1!1shb!3m6!1s0x47900a08cc0e6e41:0xf5c698b65f8c52a7!8m2!3d47.3781458!4d8.5402517!15sCgJoYloEIgJoYpIBD3RyYW5zaXRfc3RhdGlvbpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSQ05uWnFkVTVuRUFF4AEA!16zL20vMDNmc3Bs?entry=ttu" target="_blank">
-    <img src="https://th.bing.com/th/id/OIP.KYjSIdlnoaAs2D4hB2SdPQHaEp?pid=ImgDet&rs=1" alt="Karte anzeigen">-->
-</a>
+        var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
+  
+        var mapOptions = {
+          center: hbZurich,
+          zoom: 15,
+        };
+  
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+  
+        var marker = new google.maps.Marker({
+          position: hbZurich,
+          map: map,
+          title: "HB Zürich"
+        });
+      }
+  
+      function initMap() {
+        myMap();
+      }
+    </script>
+  
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&callback=initMap"></script>
+  
+    <h3>Wir sind sehr glücklich darüber, seit dem Jahr 2022 unseren Standort am HB Zürich zu haben.<br> Dort geben wir auch
+      differente Kurse, seien es Geometrie oder Algebra Kurse. Dazu aber mehr auf der Kontaktseite.<br>
+      Ebenso besitzen wir einen kleinen Shop, wo wir Formelbücher und Aufgabenhefter verkaufen.<br>
+      Kommen sie vorbei!<br><br><br><br>
+    </h3>
 
 
 <main id = "hauptbereich">
