@@ -104,3 +104,8 @@
     }body{
     background-color: rgb(210, 125, 128);
 }
+
+#googleMap {
+  height: 400px;
+  width: 100%;
+}
