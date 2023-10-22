@@ -145,6 +145,35 @@ body {
 }
 
 .container {
-  position: relative;
-  width: 50%;
+  display: flex;
+      justify-content: space-between;
+      background-color: lightgray;
+      padding: 20px;
+}
+
+#contact_us {
+  margin-left: 10;
+  padding: 11px;
+  font-size: 33px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-;
+  text-align:center;
+
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact {
+  order: 2px solid black;
+      padding: 20px;
+      text-align: center;
+}
+
+#mailto_cu {
+  text-decoration:none;
+  color:black;
+
 }
