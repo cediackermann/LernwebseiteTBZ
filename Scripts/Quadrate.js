@@ -39,3 +39,24 @@ function DiagonaleFlaeche() {
     let diagonaleFlaeche = (Math.sqrt(Math.sqrt(flaeche) + Math.sqrt(flaeche))).toFixed(2);
     document.getElementById("diagonaleOutput1").textContent = diagonaleFlaeche;
 }
+
+function UmfangSeite() {
+    let seite = document.getElementById("seiteUmfangInput").value;
+    seite = parseFloat(seite);
+    let umfangSeite = (4 * seite).toFixed(2);
+    document.getElementById("umfangOutput0").textContent = umfangSeite;
+}
+
+function UmfangDiagonale(){
+    let diagonale = document.getElementById("diagonaleUmfangInput").value;
+    diagonale = parseFloat(diagonale);
+    let umfangDiagonale = (Math.sqrt(2)*diagonale).toFixed(2);
+    document.getElementById("umfangOutput1").textContent = umfangDiagonale;
+}
+
+function UmfangFlaeche(){
+    let flaeche = document.getElementById("flaecheUmfangInput").value;
+    flaeche = parseFloat(flaeche);
+    let umfangFlaeche = (2*Math.sqrt(flaeche)).toFixed(2);
+    document.getElementById("umfangOutput2").textContent = umfangFlaeche;
+}
