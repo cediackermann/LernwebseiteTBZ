@@ -40,12 +40,12 @@ nav ul li .active {
   color: cornflowerblue;
 }
 
-nav img {
-  height: 50px;
+nav img{
+  height: 45px;
   position: absolute;
-  top: 2.9%;
+  top: 29%;
   transform: translate(0%, -50%);
-  margin-left: 30px;
+  margin-left: 32px;
 }
 
 image.container {
