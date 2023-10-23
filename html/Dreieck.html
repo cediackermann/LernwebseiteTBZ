@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-  <link rel="stylesheet" href="./../css/Formeln.css" />
+
   <script src="./../Scripts/script.js"></script>
   <title>Formeln</title>
   <link rel="stylesheet" href="./../css/Design.css">
@@ -14,119 +14,67 @@
     </script>
 
   <script src="./../Scripts/Dreieck.js"></script>
+  <link rel="stylesheet" href="./../css/Formel.css" />
 
 
 </head>
 
 <body>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">
-      <details>
-        <summary>Durchmesser</summary>
-        <div>
-          \[d=2 * r\]
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col div-spaced">
+        <h2>Das Rechtwinklige Dreieck</h2>
+        <img src="" alt="">
+        <p>So sieht ein Rechtwinkliges Dreieck aus, es hat einen rechten Winkel, der mit einem kleinen Quadrat
+          gekennzeichnet ist. Die Hypotenuse ist die Seite gegen&uuml;ber dem rechten Winkel. Die Katheten sind die
+          Seiten, die den rechten Winkel einschliessen.</p>
+        <p>Das kuenftig rot markierte stellt dar, von was die Rede ist.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col div-spaced">
+        <h2>Seite a</h2>
 
-        <input type="number" id="radiusInput" onchange="Durchmesser()" placeholder="Radius" name="Radius" />
-        &times; 2 =
-        <output name="durchmesserOutput" id="durchmesserOutput" for="durchmesser"></output><br /><br />
-        Der Durchmesser kann auch mit dem Umfang berechnet werden: <br />
-        d = U &div; &pi; <br />
-        <input type="number" id="umfangInput" onchange="Durchmesser()" placeholder="Umfang" name="Umfang" />
-        =
-        <output name="durchmesserOutput2" id="durchmesserOutput2" for="durchmesser"></output>
-        </p>
-      </details>
-      </p>
+        <!-- Seite a von Seite b und c -->
+        <img src="./../Images/Dreiecke/Seitea.jpg" alt="Bild Seiten a und cvon Seite b" class="img-body">
+        <h4>Formel mit zwei Seiten</h4>
+        <div>\[a=\sqrt{c^2 - b^2}\]</div>
+        <p>Die Wurzel aus der Summe aus dem Quadrat der Kathete c im Quadrat und dem Quadrat der Kathete b
+          ergibt die Seite a.</p>
+        <input type="number" id="seiteaSeitebInput" onchange="SeiteaSeitebSeitec()" placeholder="Seite b">
+        <input type="number" id="seiteaSeitecInput" onchange="SeiteaSeitebSeitec()" placeholder="Seite c">
+        <span>a = <output name="seiteaOutput" id="seiteaOutput0" for="seitea"></output></span>
+      </div>
+      <div class="col div-spaced">
+        <h2>Seite b</h2>
+
+        <!-- Seite b von Seiten a und c -->
+        <img src="./../Images/Dreiecke/Seiteb.jpg" alt="Bild Seiten b und c von Seite a" class="img-body">
+        <h4>Formel mit zwei Seiten</h4>
+        <div>\[b=\sqrt{a^2-c^2}\]</div>
+        <p>Die Wurzel aus der Summe aus dem Quadrat der Kathete c im Quadrat und dem Quadrat der Kathete a
+          ergibt die Seite b.</p>
+        <input type="number" id="seitebSeiteaInput" onchange="SeitebSeiteaSeitec()" placeholder="Seite a">
+        <input type="number" id="seitebSeitecInput" onchange="SeitebSeiteaSeitec()" placeholder="Seite c">
+        <span>b = <output name="seitebOutput" id="seitebOutput0" for="seiteb"></output></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col div-spaced">
+        <h2>Seite c</h2>
+
+        <!-- Seite c von Seiten a und b -->
+        <img src="./../Images/Dreiecke/Seitec.jpg" alt="Bild Seiten a und b von Seite c" class="img-body">
+        <h4>Formel mit zwei Seiten</h4>
+        <div>\[c=\sqrt{a^2-b^2}\]</div>
+        <p>Die Wurzel aus der Summe aus dem Quadrat der Kathete a im Quadrat und dem Quadrat der Kathete b
+          ergibt die Seite c.</p>
+        <input type="number" id="seitecSeiteaInput" onchange="SeitecSeiteaSeiteb()" placeholder="Seite a">
+        <input type="number" id="seitecSeitebInput" onchange="SeitecSeiteaSeiteb()" placeholder="Seite b">
+        <span>c = <output name="seitecOutput" id="seitecOutput0" for="seitec"></output></span>
+      </div>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
-    <img src="./../images/Dreieck_Umfang.png" class="card-img-top" alt="Dreieck Umfang">
-    <div class="card-body">
-      <p class="card-text">
-      <details>
-        <summary>Umfang</summary>
-        <p>
-          Umfang = U <br />
-          U = 2 &times; r &times; &pi; <br />
-          <input type="number" id="radiusUmfangInput" onchange="Umfang()" placeholder="Radius" name="Radius" /> <br>
-          =
-          <output name="umfangOutput" id="umfangOutput" for="umfang"></output>
-          U = d &times; &pi;<br />
-        </p>
-      </details>
-      </p>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">
-      <details>
-        <summary>Radius</summary>
-        <p>
-          Radius = r <br />
-          r = &frac12; &times; d
-          <input type="number" id="durchmesserRadiusInput" onchange="Radius()" placeholder="Durchmesser">
-          <output name="radiusOutput" id="radiusOutput" for="radius"></output>
-          <br />
-        </p>
-      </details>
-      </p>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">
-      <details>
-        <summary>Volumen</summary>
-        <p>
-          Volumen = V <br />
-          V = &pi; &times; r&sup2; &times; h
-          <input type="number" id="radiusVolumenInput" onchange="Volumen()" placeholder="Radius">
-          <input type="number" id="hoeheVolumenInput" onchange="Volumen()" placeholder="H&ouml;he">
-          <output name="volumenOutput" id="volumenOutput" for="volumen"></output>
-          <br />
-        </p>
-      </details>
-      </p>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">
-      <details>
-        <summary>Grundfläche</summary>
-        <p>
-          Grundfläche = G <br />
-          G = &pi; &times; r&sup2; <br />
-          <input type="number" id="radiusGrundflaecheInput" onchange="Grundflaeche()" placeholder="Radius">
-          <output name="grundflaecheOutput" id="grundflaecheOutput" for="grundflaeche"></output>
-        </p>
-      </details>
-      </p>
-    </div>
-  </div>
-
-  <p>
-    <br /><br /><br />
-    Um die Seite a zu berechnen ist die Kathete b nötig:<br />
-  </p>
-  <input type="number" id="KathetebInput" onchange="Pythagoras();" placeholder="Länge der Kathete b in cm"
-    name="Länge der Kathete b" />
-  <p><br />Die Hypotenuse c wird benötigt<br /></p>
-  <input type="number" id="HypothenusecInput" onchange="Pythagoras();" placeholder="Länge der Hypotenuse c"
-    name="Länge der Hypotenuse c" />
-  = <output name="KatheteaOutput" id="KatheteaOutput" for="Kathetea"></output>
-  </div>
-  </div>
 
 </body>

@@ -1,45 +1,44 @@
-*{
-  font-family:Arial, Helvetica, sans-serif;
-}
-*{
+* {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-html{
+
+html {
   height: 100%;
 }
 
-nav{
+nav {
   height: 90px;
   width: 100%;
   background-color: white;
 
-  box-shadow: 0px 2px 4px rgba(0,0,0,0,144);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 144);
 }
 
-nav ul{
+nav ul {
   float: right;
 }
 
-nav li{
+nav li {
   display: inline-block;
   margin-top: 30px;
   margin-right: 40px;
 }
 
-nav li a{
-  font-family:Arial, Helvetica, sans-serif;
+nav li a {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: #333;
   text-decoration: none;
 }
 
-nav ul li .active{
+nav ul li .active {
   color: cornflowerblue;
 }
 
-nav img{
+nav img {
   height: 50px;
   position: absolute;
   top: 2.9%;
@@ -71,41 +70,43 @@ image.container {
 }
 
 #Lernwebseite_style {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url('background_ma.jpg'); /* Pfad zum Bild */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  h1 {
-    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
-    color: rgb(16, 15, 15)
-  }
-  
-  h3 {
-    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(18, 18, 18);
-  }
-  
-  h4 {
-    color: rgb(18,18,18)
-  }
-  
-  h6 {
-    color: rgb(18,18,18);
-  }
-  
-  p {
-    font-size: 15px;
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('background_ma.jpg');
+  /* Pfad zum Bild */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-  /* CSS-Regeln für das Container-Div */
+h1 {
+  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+  color: rgb(16, 15, 15)
+}
+
+h3 {
+  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(18, 18, 18);
+}
+
+h4 {
+  color: rgb(18, 18, 18)
+}
+
+h6 {
+  color: rgb(18, 18, 18);
+}
+
+p {
+  font-size: 15px;
+}
+
+/* CSS-Regeln für das Container-Div */
 #formeln_style {
   width: 80%;
-  margin: 0 auto; /* Zentriert das Div horizontal auf der Seite */
+  margin: 0 auto;
+  /* Zentriert das Div horizontal auf der Seite */
   background-color: #f0f0f0;
   padding: 20px;
   border: 1px solid #ddd;
@@ -115,14 +116,8 @@ image.container {
   background-color: #c5ccf1;
 }
 
-.kontakt_style {
+.kontakt_style {}
 
-  }
+.standort_style {}
 
-.standort_style {
-
-  }
-
-  .kontakt-feld {
-    
-  }
+.kontakt-feld {}

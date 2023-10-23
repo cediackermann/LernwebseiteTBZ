@@ -1,0 +1,17 @@
+.img-sizing{
+    width: 55vh;
+    height: 55vh;
+}
+
+.img-body{
+    width: 40vh;
+    height: 40vh;
+}
+
+.div-spaced{
+    margin-bottom: 20vh;
+}
+
+body{
+    text-align: center;
+}
