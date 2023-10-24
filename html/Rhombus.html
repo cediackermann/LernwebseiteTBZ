@@ -1,86 +1,77 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <link rel="stylesheet" href="./../css/Formeln.css" />
   <script src="./../Scripts/script.js"></script>
-  <title>Formeln</title> 
-  <link rel="stylesheet" href="./../images/Design.css">
+  <title>Formeln</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+  <link rel="stylesheet" href="./../css/Formel.css">
+  <script src="./../Scripts/Rhombus.js"></script>
 
 </head>
 
 <body>
-    <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Fläche_Diagonale.png" class="card-img-top" alt="Rhombus Fläche Diagonale">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Fl&auml;che Diagonale</summary>
-           
-          </details></p>
-        </div>
+  <div class="container1">
+    <div class="row">
+      <div class="col">
+        <h2>Der Rhombus</h2>
+        <img src="./../images/Rhombus.jpg" alt="Gezeichneter Rhombus" class="img-fluid img-sized">
+        <p>
+          So sieht ein Rhombus aus, alle Seiten sind gleich lang, sie werden demnach alle mit einem kleinen s
+          beschriftet.
+        </p>
       </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Fläche_Höhe.png" class="card-img-top" alt="Rhombus Höhe">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Höhe</summary>
-           
-          </details></p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- Flaeche -->
+        <h2>Fl&auml;che:</h2>
+        <img src="./../images/Rhombus_Fläche.png" class="img-fluid img-sized" alt="Rhombus Fläche">
+        <h4>Formel mit der Seite und der H&ouml;he:</h4>
+        <div>
+          \[A=s\times h\]
         </div>
-      </div>
+        <p>Die Seite mal die H&ouml;he ergibt die Fl&auml;che eines Rhombus.</p>
+        <input type="number" id="seiteFlaecheInput" onchange="FlaecheSeite()" placeholder="Seite a">
+        <input type="number" id="hoeheFlaecheInput" onchange="FlaecheSeite()" placeholder="Höhe h">
+        <div>A = <output name="flaecheOutput0" id="flaecheOutput0" for="flaeche"></output></div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Umfang.png" class="card-img-top" alt="Rhombus Umfang">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Umfang</summary>
-            
-          </details></p>
+        <h4>Formel mit der Diagonale und der Diagonale:</h4>
+        <div>
+          \[A=\frac{d\times d}{2}\]
         </div>
+        <p>Die Diagonale mal die Diagonale geteilt durch zwei ergibt die Fl&auml;che eines Rhombus.</p>
+        <input type="number" id="diagonaleFlaecheInput" onchange="FlaecheDiagonale()" placeholder="Diagonale d">
+        <div>A = <output name="flaecheOutput1" id="flaecheOutput1" for="flaeche"></output></div>
       </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Diagonale_AC.png" class="card-img-top" alt="Rhombus Diagonale AC">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Umfang</summary>
-            
-          </details></p>
+      <div class="col">
+        <!-- Umfang -->
+        <h2>Umfang:</h2>
+        <img src="./../images/Rhombus_Umfang.png" class="img-fluid img-sized" alt="Rhombus Umfang">
+        <h4>Formel mit der Seite:</h4>
+        <div>
+          \[U=4\times s\]
         </div>
-      </div>
+        <p>Vier mal die Seite ergibt den Umfang eines Rhombus.</p>
+        <input type="number" id="seiteUmfangInput" onchange="UmfangSeite()" placeholder="Seite a">
+        <div>U = <output name="umfangOutput0" id="umfangOutput0" for="umfang"></output></div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Fläche_Diagonale.png" class="card-img-top" alt="Rhombus Fläche Diagonale">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Fläche Diagonale</summary>
-            
-          </details></p>
+        <h4>Formel mit der Diagonale:</h4>
+        <div>
+          \[U=\sqrt{d^2 + d^2} + \sqrt{d^2 + d^2}\]
         </div>
+        <p>Die Wurzel aus der Summe aus dem Quadrat einer Diagonale und dem Quadrat einer Diagonale ergibt die
+          Diagonale des Rhombus.</p>
+        <input type="number" id="diagonaleUmfangInput" onchange="UmfangDiagonale()" placeholder="Diagonale d">
+        <div>U = <output name="umfangOutput1" id="umfangOutput1" for="umfang"></output></div>
       </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Diagonale_F.png" class="card-img-top" alt="Rhombus Diagonale f">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Diagonale F</summary>
-            
-          </details></p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="./../images/Rhombus_Inkreis.png" class="card-img-top" alt="Rhombus Inkreis">
-        <div class="card-body">
-          <p class="card-text"><details>
-            <summary>Inkreis</summary>
-            
-          </details></p>
-        </div>
-      </div>
-
+    </div>
+  </div>
 </body>
-</html>

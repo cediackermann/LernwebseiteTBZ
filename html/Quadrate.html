@@ -20,11 +20,11 @@
 <body>
 
 
-  <div class="container">
+  <div class="container1">
     <div class="row">
-      <div class="col  div-spaced">
+      <div class="col">
         <h2>Das Quadrat</h2>
-        <img src="./../Images/Quadrate/Quadrat.jpg" alt="Gezeichnetes Quadrat" class="img-sizing">
+        <img src="./../Images/Quadrate/Quadrat.jpg" alt="Gezeichnetes Quadrat" class="img-fluid img-sized">
         <p>So sieht ein Quadrat aus, alle Seiten sind gleich lang, sie werden demnach alle mit einem kleinen s
           beschriftet.
           Die Ecken sind alle 90&deg; Grad gross, sie werden gegen den Uhrzeigersinn dem Alphabet nach in
@@ -33,9 +33,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col div-spaced">
+      <div class="col">
         <h2>Diagonale:</h2>
-        <img src="./../Images/Quadrate/Diagonale.jpg" class="img-body" alt="Kreis Radius">
+        <img src="./../Images/Quadrate/Diagonale.jpg" class="img-fluid img-sized" alt="Kreis Radius">
 
 
         <!-- Diagonale von Seite -->
@@ -47,7 +47,7 @@
         <p>Die Wurzel aus der Summe aus dem Quadrat einer Seite und dem Quadrat einer Seite ergibt die Diagonale des
           Quadrates.</p>
         <input type="number" id="seiteDiagonaleInput" onchange="DiagonaleSeite()" placeholder="Seite a">
-        <span>d = <output name="diagonaleOutput" id="diagonaleOutput0" for="diagonale"></output></span>
+        <div>d = <output name="diagonaleOutput" id="diagonaleOutput0" for="diagonale"></output></div>
 
         <!-- Diagonale von Flaeche -->
         <h4>Formel mit der Fl&auml;che:</h4>
@@ -57,12 +57,12 @@
         <p>Die Wurzel aus der Summe der Wurzel der Fl&auml;che und der Wurzel der Fl&auml;che ergibt der Diagonale eines
           Quadrates.</p>
         <input type="number" id="flaecheDiagonaleInput" onchange="DiagonaleFlaeche()" placeholder="Fläche">
-        <span>d = <output name="diagonaleOutput" id="diagonaleOutput1" for="diagonale"></output></span>
+        <div>d = <output name="diagonaleOutput" id="diagonaleOutput1" for="diagonale"></output></div>
 
       </div>
-      <div class="col div-spaced">
+      <div class="col">
         <h2>Fl&auml;che:</h2>
-        <img src="./../Images/Quadrate/Flaeche.jpg" class="img-body" alt="Kreis Radius">
+        <img src="./../Images/Quadrate/Flaeche.jpg" class="img-fluid img-sized" alt="Kreis Radius">
 
         <!-- Flaeche von Seite -->
         <h4>Formel mit einer Seite:</h4>
@@ -70,7 +70,7 @@
         <p>Die Seite im Quadrat oder die Seite mal sich selbst ergeben die Flaeche des Quadrates.</p>
 
         <input type="number" id="seiteFlaecheInput" onchange="FlaecheSeite()" placeholder="Seite">
-        <span>A = <output name="flaecheOutput" id="flaecheOutput0" for="flaeche"></output></span>
+        <div>A = <output name="flaecheOutput" id="flaecheOutput0" for="flaeche"></output></div>
 
         <!-- Flaeche von Diagonale -->
         <h4>Formel mit der Diagonale</h4>
@@ -78,34 +78,34 @@
         <p>Das Ergebnis vom Durchmesser multipliziert mit sich selbst und dividiert durch 2 ist die Flaeche eines
           Quadrates.</p>
         <input type="number" id="diagonaleFlaecheInput" onchange="FlaecheDiagonale()" placeholder="Diagonale">
-        <span> A = <output name="flaecheOutput" id="flaecheOutput1" for="flaeche"></output> </span>
+        <div> A = <output name="flaecheOutput" id="flaecheOutput1" for="flaeche"></output> </div>
 
       </div>
       <div class="row">
-        <div class="col div-spaced">
+        <div class="col">
           <h2>Umfang:</h2>
-          <img src="./../Images/Quadrate/Umfang.jpg" class="img-body" alt="Kreis Radius">
+          <img src="./../Images/Quadrate/Umfang.jpg" class="img-fluid img-sized" alt="Kreis Radius">
 
           <!-- Umfang von Seite -->
           <h4>Formel mit einer Seite:</h4>
           <div>\[U=4\times s\]</div>
           <p>Vier mal eine Seite ergibt den Umfang des Quadrates.</p>
           <input type="number" id="seiteUmfangInput" onchange="UmfangSeite()" placeholder="Seite">
-          <span>U = <output name="UmfangOutput" id="umfangOutput0" for="umfang"></output></span>
+          <div>U = <output name="UmfangOutput" id="umfangOutput0" for="umfang"></output></div>
 
           <!-- Umfang von Diagonale -->
           <h4>Formel mit der Diagonale:</h4>
           <div>\[U=\sqrt{2}\times d\]</div>
           <p>Das Produkt aus Wurzel 2 und dem Durchmesser ist der Umfang des Quadrates</p>
           <input type="number" id="diagonaleUmfangInput" onchange="UmfangDiagonale()" placeholder="Diagonale">
-          <span>U = <output name="UmfangOutput" id="umfangOutput1" for="umfang"></output></span>
+          <div>U = <output name="UmfangOutput" id="umfangOutput1" for="umfang"></output></div>
 
           <!-- Umfang von Flaeche -->
           <h4>Fromel mit der Flaeche:</h4>
           <div>\[U=4\times\sqrt{A}\]</div>
           <p>Das Produkt aus vier und der Wurzel der Flaeche ist gleich dem Umfang.</p>
           <input type="number" id="flaecheUmfangInput" onchange="UmfangFlaeche()" placeholder="Flaeche">
-          <span>U = <output name="UmfangOutput" id="umfangOutput2" for="umfang"></output></span>
+          <div>U = <output name="UmfangOutput" id="umfangOutput2" for="umfang"></output></div>
         </div>
       </div>
 
