@@ -1,7 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-* {
   margin: 0;
   padding: 0;
 }
@@ -119,6 +117,6 @@ body {
 }
 .Tipps3 {
   width: 45%;
-  height: 600px;
+  height: 700px;
   background-color: rgb(166, 160, 182);
 }
