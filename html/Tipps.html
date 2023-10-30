@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" href="./../css/Tipps.css" />
-    <script src="./../Scripts/script.js"></script>
     <title>Tipps</title>
-    <link rel="stylesheet" href="./..DesignLernwebseite.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -12,138 +9,182 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./../css/Design.css" />
   </head>
 
-  <body>
-    <div id="Tipps_style">
-      <header id="kopfbereich"></header>
+  <body id="tipps">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./../html/Formeln.html"
+            ><img src="./../Images/logo.png" alt="Logo" width="70" height="70"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <nav class="navbar navbar-expand-lg navbar-light text-white">
-        <a href="./../html/Formeln.html"> <img src="./../images/logo.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Formeln.html">Formeln</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Standort.html">Standort</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Tipps.html">Tipps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/kontakt.html">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-       <div class="d-flex justify-content-center align-items-center min-vh-100">
-      <div id="Tipps_style">
-      <div class="bg-tertiary">
-          <div class="Tipps1">
-            <h1>Lernumgebung:</h1>
-            <p>
-              Egal ob zu Hause, in der Schule oder an der Universität - die
-              richtige Lernumgebung ist entscheidend für effizientes und
-              erfolgreiches Lernen. Eine gute Lernumgebung zeichnet sich durch
-              folgende Eigenschaften aus:
-            </p>
-            <p>
-              Ruhe: Damit sich der Geist optimal auf das Lernen konzentrieren
-              kann, sollte die Umgebung möglichst ruhig und frei von Ablenkungen
-              wie Musik, Fernsehen oder Gesprächen sein.<br /><br />Helligkeit:
-              Ein gut ausgeleuchteter Platz fördert die Konzentration und
-              verhindert Ermüdungserscheinungen. Das Tageslicht sollte möglichst
-              ungefiltert in den Lernbereich scheinen.<br /><br />Ordnung: Ein
-              aufgeräumter, organisierter Schreibtisch oder Tisch vermeidet
-              Stress und Sucharbeit. Bücher und Materialien sollten einen festen
-              Platz haben.<br /><br />
-              Bequemlichkeit: Der Stuhl sollte eine aufrechte und entspannte
-              Haltung ermöglichen. Auch kleine Snacks und Getränke sollten
-              griffbereit sein, um Pausen möglichst einfach einlegen zu
-              können.<br /><br />
-              Technik: Moderne Lernmedien wie Laptop, Tablet oder Whiteboard
-              können das Lernerlebnis bereichern, sollten aber der Konzentration
-              dienen und nicht selbst zum Ablenkungsfaktor werden.<br /><br />Lernumgebung:
-              Ein eigener Raum oder abgetrennter Bereich hilft, "nicht-Lernen"
-              auszusperren. Wo möglich, sollten auch Pflanzen oder Bilder für
-              eine angenehme Atmosphäre sorgen.
-            </p>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="./../html/Formeln.html">Formeln</a>
+              </li>
+              <li class="nav-item">
+                <a href="./../html/Standort.html">Standort</a>
+              </li>
+              <li>
+                <a href="./../html/Tipps.html">Tipps</a>
+              </li>
+              <li>
+                <a href="./../html/kontakt.html">Kontakt</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div
-          class="Tipps2"
-        >
+      </nav>
+    </header>
+    <div id="tipps">
+      <div class="container">
+        <div>
+          <h1>Lernumgebung:</h1>
+          <p>
+            Egal ob zu Hause, in der Schule oder an der Universität - die
+            richtige Lernumgebung ist entscheidend für effizientes und
+            erfolgreiches Lernen. Eine gute Lernumgebung zeichnet sich durch
+            folgende Eigenschaften aus:
+          </p>
+          <p>
+            Ruhe: Damit sich der Geist optimal auf das Lernen konzentrieren
+            kann, sollte die Umgebung möglichst ruhig und frei von Ablenkungen
+            wie Musik, Fernsehen oder Gesprächen sein.
+          </p>
+          <p>
+            Helligkeit: Ein gut ausgeleuchteter Platz fördert die Konzentration
+            und verhindert Ermüdungserscheinungen. Das Tageslicht sollte
+            möglichst ungefiltert in den Lernbereich scheinen.
+          </p>
+          <p>
+            Ordnung: Ein aufgeräumter, organisierter Schreibtisch oder Tisch
+            vermeidet Stress und Sucharbeit. Bücher und Materialien sollten
+            einen festen Platz haben.
+          </p>
+          <p>
+            Bequemlichkeit: Der Stuhl sollte eine aufrechte und entspannte
+            Haltung ermöglichen. Auch kleine Snacks und Getränke sollten
+            griffbereit sein, um Pausen möglichst einfach einlegen zu können.
+          </p>
+          <p>
+            Technik: Moderne Lernmedien wie Laptop, Tablet oder Whiteboard
+            können das Lernerlebnis bereichern, sollten aber der Konzentration
+            dienen und nicht selbst zum Ablenkungsfaktor werden.
+          </p>
+          <p>
+            Lernumgebung: Ein eigener Raum oder abgetrennter Bereich hilft,
+            "nicht-Lernen" auszusperren. Wo möglich, sollten auch Pflanzen oder
+            Bilder für eine angenehme Atmosphäre sorgen.
+          </p>
+        </div>
+        <div>
           <h1>Wann lernt man am besten:</h1>
           <p>
             Morgens direkt nach dem Aufwachen: Kurz nach dem Aufwachen ist das
             Gehirn besonders ausgeruht und aufnahmefähig. Die ersten zwei
-            Stunden sind ideal zum Einprägen neuer Fakten.<br /><br />Vormittags
-            zwischen 10-12 Uhr: In diesem Zeitfenster erreicht die
+            Stunden sind ideal zum Einprägen neuer Fakten.
+          </p>
+          <p>
+            Vormittags zwischen 10-12 Uhr: In diesem Zeitfenster erreicht die
             Konzentrationsspanne ihren ersten Höhepunkt. Neue Inhalte können
-            besonders gut verarbeitet werden.<br /><br />Nachmittags zwischen
-            15-17 Uhr: Gegen Nachmittag sinkt der Glukosespiegel im Gehirn ab.
-            Um ihn wieder anzuheben, eignen sich kurze Lerneinheiten.<br /><br />Abends
-            nach dem Essen: Nach der Mahlzeit steigt der Blutzuckerspiegel an,
-            was das Lernen unterstützt. Am besten nicht zu spät, da der
-            Schlafrhythmus beachtet werden sollte.<br /><br />Kurze
-            wiederholende Einheiten: In 5-10-minütigen Intervallen
+            besonders gut verarbeitet werden.
+          </p>
+          <p>
+            Nachmittags zwischen 15-17 Uhr: Gegen Nachmittag sinkt der
+            Glukosespiegel im Gehirn ab. Um ihn wieder anzuheben, eignen sich
+            kurze Lerneinheiten.
+          </p>
+          <p>
+            Abends nach dem Essen: Nach der Mahlzeit steigt der
+            Blutzuckerspiegel an, was das Lernen unterstützt. Am besten nicht zu
+            spät, da der Schlafrhythmus beachtet werden sollte.
+          </p>
+          <p>
+            Kurze wiederholende Einheiten: In 5-10-minütigen Intervallen
             Wiederholungen einstreuen ermöglicht besseres Einprägen als
-            stundenlanges Durchackern.<br /><br />Lerngruppen: Zusammen mit
-            anderen fällt es leichter, sich zu konzentrieren. Man kann sich
-            gegenseitig motivieren und Inhalte erklären.<br /><br />Pausen
-            einlegen: Nach 50-60 Minuten konzentrierten Lernens kommt es auf
-            einen kurzen Bildunterschluss an, um die Effizienz zu halten.
+            stundenlanges Durchackern.
+          </p>
+          <p>
+            Lerngruppen: Zusammen mit anderen fällt es leichter, sich zu
+            konzentrieren. Man kann sich gegenseitig motivieren und Inhalte
+            erklären.
+          </p>
+          <p>
+            Pausen einlegen: Nach 50-60 Minuten konzentrierten Lernens kommt es
+            auf einen kurzen Bildunterschluss an, um die Effizienz zu halten.
             Regelmäßigkeit zahlt sich aus: Wenige Minuten jeden Tag bringen mehr
             als stundenlanges Lernen nur ein Mal pro Woche.
           </p>
         </div>
-        <div
-          class="Tipps3"
-        >
+        <div>
           <h1>Wie am besten lernen?</h1>
           <p>
             Verstehen statt auswendig lernen: Versuche Formeln und Zusammenhänge
-            zu verstehen, anstatt sie bloß auswendig zu lernen.<br /><br />Arbeite
-            Beispiele: Das Durchrechnen vieler Beispielaufgaben ist der beste
-            Weg, um mathematische Konzepte und Prozesse zu verinnerlichen.<br /><br />
+            zu verstehen, anstatt sie bloß auswendig zu lernen.
+          </p>
+
+          <p>
+            Arbeite Beispiele: Das Durchrechnen vieler Beispielaufgaben ist der
+            beste Weg, um mathematische Konzepte und Prozesse zu verinnerlichen.
+          </p>
+          <p>
             Wende neue Techniken schnell an: Übe neue Methoden und Formeln
-            gleich nach dem Lernen in Beispielen an, bevor du weitergehst.<br /><br />
+            gleich nach dem Lernen in Beispielen an, bevor du weitergehst.
+          </p>
+          <p>
             Wiederhole regelmäßig: Math-Kenntnisse verflüchtigen sich schnell.
-            Mach dir einen Wochenplan mit kurzen Wiederholungen.<br /><br />Merkablätter
-            und Memory: Erstelle selbst Merkblätter oder spiel Memory, um
-            Formeln und Techniken fest zu verankern.<br /><br />Visualisierungen
-            helfen: Zeichne oder male Grafiken, Diagramme oder Symbolketten, um
-            abstrakte Inhalte zu veranschaulichen.<br /><br />Arbeite
-            systematisch: Folge dem Lernstoff Schritt für Schritt und setze dir
-            kleinere Teilziele, um den Überblick zu behalten.<br /><br />Lerne
-            sozial: Bildet Kleingruppen zum gegenseitigen Erklären. Andere
-            Sichtweisen können helfen.<br /><br />Hinterfrage Ursache-Wirkung:
-            Versuche stets auch die Zusammenhänge und Hintergründe zu verstehen,
-            nicht nur die Formeln.<br /><br />Praxisbezug schafft Motivation:
-            Überlege, wo du mathematische Konzepte in der Realität anwenden
-            kannst.
+            Mach dir einen Wochenplan mit kurzen Wiederholungen.
+          </p>
+          <p>
+            Merkablätter und Memory: Erstelle selbst Merkblätter oder spiel
+            Memory, um Formeln und Techniken fest zu verankern.
+          </p>
+          <p>
+            Visualisierungen helfen: Zeichne oder male Grafiken, Diagramme oder
+            Symbolketten, um abstrakte Inhalte zu veranschaulichen.
+          </p>
+          <p>
+            Arbeite systematisch: Folge dem Lernstoff Schritt für Schritt und
+            setze dir kleinere Teilziele, um den Überblick zu behalten.
+          </p>
+          <p>
+            Lerne sozial: Bildet Kleingruppen zum gegenseitigen Erklären. Andere
+            Sichtweisen können helfen.
+          </p>
+          <p>
+            Hinterfrage Ursache-Wirkung: Versuche stets auch die Zusammenhänge
+            und Hintergründe zu verstehen, nicht nur die Formeln.
+          </p>
+          <p>
+            Praxisbezug schafft Motivation: Überlege, wo du mathematische
+            Konzepte in der Realität anwenden kannst.
           </p>
         </div>
-
-        <main id="hauptbereich">
-          <a href="#kopfbereich"> <em> Nach oben</em></a>
-        </main>
-
-        <footer id="fussbereich"></footer>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
