@@ -1,10 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
   margin: 0;
-  padding: 0;
+    padding: 0;
 }
 
 html {
@@ -106,7 +103,9 @@ p {
 }
 
 body {
-  background-color: rgb(240, 155, 109);
+  background-color: rgb(220,
+    242,
+    234);
 }
 
 .image {
@@ -147,7 +146,7 @@ body {
 .container {
   display: flex;
       justify-content: space-between;
-      background-color: lightgray;
+      background-color: rgb(185, 217, 206);
       padding: 20px;
 }
 

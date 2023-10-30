@@ -1,10 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
   margin: 0;
-  padding: 0;
+    padding: 0;
 }
 
 html {
@@ -106,7 +103,7 @@ p {
 }
 
 body {
-  background-color: rgb(198, 167, 227);
+  background-color: rgb(227, 196, 247);
 }
 
 #Fussbereich {

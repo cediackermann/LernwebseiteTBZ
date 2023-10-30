@@ -1,7 +1,5 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
-  }
-  *{
     margin: 0;
     padding: 0;
   }
@@ -78,7 +76,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-color: rgb(245, 245, 249);
+      background-color: rgb(184, 184, 217);
     }
     
     h1 {
@@ -103,7 +101,9 @@
       font-size: 15px;
     }
     body {
-    background-color: rgb(210, 125, 128);
+    background-color: rgb(204,
+      225,
+      232);
 }
 
 #googleMap {
