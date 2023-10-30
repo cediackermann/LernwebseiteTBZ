@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.container1 {
+    margin: 10vh 30vh 0 30vh;
+}
+
+.img-sized {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+div{
+    padding: 0px 0px 0px 0px;
+}

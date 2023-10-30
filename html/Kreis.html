@@ -13,121 +13,129 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
+  <link rel="stylesheet" href="./../css/Formel.css">
+
 </head>
 
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container1">
+    <div class="row">
+      <div class="col">
+        <h1>Der Kreis</h1>
+        <img src="./../Images/Kreise/Kreis.jpg" alt="Kreis" class="img-fluid img-sized">
+        <p>So sieht ein Kreis aus, er hat einen Radius (r) und einen Durchmesser (d). Der Radius ist die halbe Laenge
+          des
+          Durchmessers. Der Umfang (U) ist die Laenge der Kreislinie. Die Flaeche (A) ist die Flaeche innerhalb der
+          Kreislinie.</p>
+        <p>Das kuenftig rot markierte stellt dar, von was die Rede ist.</p>
+      </div>
+
+    </div>
     <div class="row">
       <div class="col">
         <h2>Radius:</h2>
-        <!-- Bild hier einfuegen -->
 
         <!-- Radius von Flaeche -->
+        <img src="./../Images/Kreise/Radius.jpg" alt="Bild Radius von der Flaeche" class="img-fluid img-sized">
         <h4>Formel mit der Flaeche</h4>
         <div>\[r=\sqrt{\frac{A}{\pi}}\]</div>
         <p>Die Wurzel aus der Flaeche geteilt durch Pi ergibt den Radius eines Kreises.</p>
         <input type="number" id="flaecheRadiusInput" onchange="RadiusFlaeche()" placeholder="Flaeche">
-        <span>r = <output name="radiusOutput" id="radiusOutput0" for="radius"></output></span>
-        <!-- Bild hier einfuegen -->
+        <div>r = <output name="radiusOutput" id="radiusOutput0" for="radius"></output></div>
+
 
         <!-- Radius von Umfang -->
         <h4>Formel mit dem Umfang</h4>
         <div>\[r=\frac{U}{2 \times \pi}\]</div>
         <p>Der Umfang geteilt durch 2 mal Pi ergibt den Radius eines Kreises.</p>
         <input type="number" id="umfangRadiusInput" onchange="RadiusUmfang()" placeholder="Umfang">
-        <span>r = <output name="radiusOutput" id="radiusOutput1" for="radius"></output></span>
-        <!-- Bild hier einfuegen -->
+        <div>r = <output name="radiusOutput" id="radiusOutput1" for="radius"></output></div>
 
         <!-- Radius von Durchmesser -->
         <h4>Formel mit dem Durchmesser</h4>
         <div>\[r=\frac{d}{2}\]</div>
         <p>Der Durchmesser geteilt durch 2 ergibt den Radius eines Kreises.</p>
         <input type="number" id="durchmesserRadiusInput" onchange="RadiusDurchmesser()" placeholder="Durchmesser">
-        <span>r = <output name="radiusOutput" id="radiusOutput2" for="radius"></output></span>
+        <div>r = <output name="radiusOutput" id="radiusOutput2" for="radius"></output></div>
       </div>
       <div class="col">
         <h2>Umfang</h2>
-        <!-- Bild hier einfuegen -->
-
         <!-- Umfang von Radius -->
+        <img src="./../Images/Kreise/UmfangKreis.jpg" alt="Bild Umfang Kreis" class="img-fluid img-sized">
         <h4>Formel mit dem Radius</h4>
         <div>\[U=2 \times \pi \times r\]</div>
         <p>2 mal Pi mal Radius ergibt den Umfang eines Kreises.</p>
         <input type="number" id="radiusUmfangInput" onchange="UmfangRadius()" placeholder="Radius">
-        <span>U = <output name="umfangOutput" id="umfangOutput0" for="umfang"></output></span>
-        <!-- Bild hier einfuegen -->
+        <div>U = <output name="umfangOutput" id="umfangOutput0" for="umfang"></output></div>
 
         <!-- Umfang von Flaeche -->
         <h4>Formel mit der Flaeche</h4>
         <div>\[U=\sqrt{A \times \pi} \times 2\]</div>
         <p>Die Wurzel aus der Flaeche mal Pi mal 2 ergibt den Umfang eines Kreises.</p>
         <input type="number" id="flaecheUmfangInput" onchange="UmfangFlaeche()" placeholder="Flaeche">
-        <span>U = <output name="umfangOutput" id="umfangOutput1" for="umfang"></output></span>
-        <!-- Bild hier einfuegen -->
+        <div>U = <output name="umfangOutput" id="umfangOutput1" for="umfang"></output></div>
 
         <!-- Umfang von Durchmesser -->
         <h4>Formel mit dem Durchmesser</h4>
         <div>\[U=d \times \pi\]</div>
         <p>Der Durchmesser mal Pi ergibt den Umfang eines Kreises.</p>
         <input type="number" id="durchmesserUmfangInput" onchange="UmfangDurchmesser()" placeholder="Durchmesser">
-        <span>U = <output name="umfangOutput" id="umfangOutput2" for="umfang"></output></span>
+        <div>U = <output name="umfangOutput" id="umfangOutput2" for="umfang"></output></div>
       </div>
-      <div class="col">
-        <h2>Flaeche</h2>
-        <!-- Bild hier einfuegen -->
+      <div class="row">
+        <div class="col">
+          <h2>Flaeche</h2>
+          <!-- Flaeche von Radius -->
+          <img src="./../Images/Kreise/FlaecheKreis.jpg" alt="Bild Flaeche eines Kreises" class="img-fluid img-sized">
+          <h4>Formel mit dem Radius</h4>
+          <div>\[A=\pi \times r^2\]</div>
+          <p>Pi mal Radius hoch 2 ergibt die Flaeche eines Kreises.</p>
+          <input type="number" id="radiusFlaecheInput" onchange="FlaecheRadius()" placeholder="Radius">
+          <div>A = <output name="flaecheOutput" id="flaecheOutput0" for="flaeche"></output></div>
 
-        <!-- Flaeche von Radius -->
-        <h4>Formel mit dem Radius</h4>
-        <div>\[A=\pi \times r^2\]</div>
-        <p>Pi mal Radius hoch 2 ergibt die Flaeche eines Kreises.</p>
-        <input type="number" id="radiusFlaecheInput" onchange="FlaecheRadius()" placeholder="Radius">
-        <span>A = <output name="flaecheOutput" id="flaecheOutput0" for="flaeche"></output></span>
-        <!-- Bild hier einfuegen -->
+          <!-- Flaeche von Umfang -->
+          <h4>Formel mit dem Umfang</h4>
+          <div>\[A=\frac{U^2}{4 \times \pi}\]</div>
+          <p>Der Umfang hoch 2 geteilt durch 4 mal Pi ergibt die Flaeche eines Kreises.</p>
+          <input type="number" id="umfangFlaecheInput" onchange="FlaecheUmfang()" placeholder="Umfang">
+          <div>A = <output name="flaecheOutput" id="flaecheOutput1" for="flaeche"></output></div>
 
-        <!-- Flaeche von Umfang -->
-        <h4>Formel mit dem Umfang</h4>
-        <div>\[A=\frac{U^2}{4 \times \pi}\]</div>
-        <p>Der Umfang hoch 2 geteilt durch 4 mal Pi ergibt die Flaeche eines Kreises.</p>
-        <input type="number" id="umfangFlaecheInput" onchange="FlaecheUmfang()" placeholder="Umfang">
-        <span>A = <output name="flaecheOutput" id="flaecheOutput1" for="flaeche"></output></span>
-        <!-- Bild hier einfuegen -->
+          <!-- Flaeche von Durchmesser -->
+          <h4>Formel mit dem Durchmesser</h4>
+          <div>\[A=\frac{d^2}{4}\]</div>
+          <p>Der Durchmesser hoch 2 geteilt durch 4 ergibt die Flaeche eines Kreises.</p>
+          <input type="number" id="durchmesserFlaecheInput" onchange="FlaecheDurchmesser()" placeholder="Durchmesser">
+          <div>A = <output name="flaecheOutput" id="flaecheOutput2" for="flaeche"></output></div>
+        </div>
+        <div class="col">
+          <h2>Durchmesser</h2>
 
-        <!-- Flaeche von Durchmesser -->
-        <h4>Formel mit dem Durchmesser</h4>
-        <div>\[A=\frac{d^2}{4}\]</div>
-        <p>Der Durchmesser hoch 2 geteilt durch 4 ergibt die Flaeche eines Kreises.</p>
-        <input type="number" id="durchmesserFlaecheInput" onchange="FlaecheDurchmesser()" placeholder="Durchmesser">
-        <span>A = <output name="flaecheOutput" id="flaecheOutput2" for="flaeche"></output></span>
+          <!-- Durchmesser von Radius -->
+          <img src="./../Images/Kreise/DurchmesserKreis.jpg" alt="Bild Durchmesser eines Kreises" class="img-fluid img-sized">
+          <h4>Formel mit dem Radius</h4>
+          <div>\[d=2 \times r\]</div>
+          <p>2 mal Radius ergibt den Durchmesser eines Kreises.</p>
+          <input type="number" id="radiusDurchmesserInput" onchange="DurchmesserRadius()" placeholder="Radius">
+          <div>d = <output name="durchmesserOutput" id="durchmesserOutput0" for="durchmesser"></output></div>
+
+          <!-- Durchmesser von Umfang -->
+          <h4>Formel mit dem Umfang</h4>
+          <div>\[d=\frac{U}{\pi}\]</div>
+          <p>Der Umfang geteilt durch Pi ergibt den Durchmesser eines Kreises.</p>
+          <input type="number" id="umfangDurchmesserInput" onchange="DurchmesserUmfang()" placeholder="Umfang">
+          <div>d = <output name="durchmesserOutput" id="durchmesserOutput1" for="durchmesser"></output></div>
+
+          <!-- Durchmesser von Flaeche -->
+          <h4>Formel mit der Flaeche</h4>
+          <div>\[d=\sqrt{A \times 4}\]</div>
+          <p>Die Wurzel aus der Flaeche mal 4 ergibt den Durchmesser eines Kreises.</p>
+          <input type="number" id="flaecheDurchmesserInput" onchange="DurchmesserFlaeche()" placeholder="Flaeche">
+          <div>d = <output name="durchmesserOutput" id="durchmesserOutput2" for="durchmesser"></output></div>
+        </div>
       </div>
-      <div class="col">
-        <h2>Durchmesser</h2>
-        <!-- Bild hier einfuegen -->
 
-        <!-- Durchmesser von Radius -->
-        <h4>Formel mit dem Radius</h4>
-        <div>\[d=2 \times r\]</div>
-        <p>2 mal Radius ergibt den Durchmesser eines Kreises.</p>
-        <input type="number" id="radiusDurchmesserInput" onchange="DurchmesserRadius()" placeholder="Radius">
-        <span>d = <output name="durchmesserOutput" id="durchmesserOutput0" for="durchmesser"></output></span>
-        <!-- Bild hier einfuegen -->
-
-        <!-- Durchmesser von Umfang -->
-        <h4>Formel mit dem Umfang</h4>
-        <div>\[d=\frac{U}{\pi}\]</div>
-        <p>Der Umfang geteilt durch Pi ergibt den Durchmesser eines Kreises.</p>
-        <input type="number" id="umfangDurchmesserInput" onchange="DurchmesserUmfang()" placeholder="Umfang">
-        <span>d = <output name="durchmesserOutput" id="durchmesserOutput1" for="durchmesser"></output></span>
-        <!-- Bild hier einfuegen -->
-
-        <!-- Durchmesser von Flaeche -->
-        <h4>Formel mit der Flaeche</h4>
-        <div>\[d=\sqrt{A \times 4}\]</div>
-        <p>Die Wurzel aus der Flaeche mal 4 ergibt den Durchmesser eines Kreises.</p>
-        <input type="number" id="flaecheDurchmesserInput" onchange="DurchmesserFlaeche()" placeholder="Flaeche">
-        <span>d = <output name="durchmesserOutput" id="durchmesserOutput2" for="durchmesser"></output></span>
-      </div>
     </div>
 
 </body>
