@@ -10,7 +10,7 @@ html {
 nav {
   height: 90px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 144);
 }
@@ -124,7 +124,7 @@ p {
   max-width: fit-content;
   margin-left: 40%;
   margin-top: 10px;
-  background-color: rgba(142, 234, 255, 0.608);
+  background-color: rgba(255, 161, 187, 0.567);
 
 }
 
@@ -139,7 +139,7 @@ p {
 
 body {
 
-  background-image: url(https://images.pixexid.com/a-4k-ultra-hd-wallpaper-featuring-a-couple-sitting-on-a-swing-hanging-from-a-big-4m6fdjno.jpeg);
+  background-color: rgb(255, 0, 179);
   background-size: 100%;
   
 }
