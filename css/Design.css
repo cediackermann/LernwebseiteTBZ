@@ -1,55 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
   margin: 0;
   padding: 0;
-}
-
-html {
-  height: 100%;
-}
-
-nav {
-  height: 90px;
-  width: 100%;
-  background-color: white;
-
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 144);
-}
-
-nav ul {
-  float: right;
-}
-
-nav li {
-  display: inline-block;
-  margin-top: 30px;
-  margin-right: 40px;
-}
-
-nav li a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  color: #333;
-  text-decoration: none;
-}
-
-nav ul li .active {
-  color: cornflowerblue;
-}
-
-nav img {
-  height: 45px;
-  position: absolute;
-  top: 29%;
-  transform: translate(0%, -50%);
-  margin-left: 32px;
-}
-
-image.container {
-  position: relative;
 }
 
 .topright {
@@ -145,14 +97,15 @@ body {
 
   background-image: url(https://images.pixexid.com/a-4k-ultra-hd-wallpaper-featuring-a-couple-sitting-on-a-swing-hanging-from-a-big-4m6fdjno.jpeg);
   background-size: 100%;
-  
+
 }
+
 #inform_d {
   border: solid black;
   border-radius: 20px;
   max-width: fit-content;
   margin-left: 25%;
-  background-color:rgb(128, 255, 212, 0.75);
+  background-color: rgb(128, 255, 212, 0.75);
 
 }
 
@@ -160,4 +113,3 @@ body {
   color: black;
 
 }
-
