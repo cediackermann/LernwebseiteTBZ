@@ -11,52 +11,45 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./../css/Standort.css"
-    <iframe src="iframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.733883165071!2d8.532212496830523!3d47.37551538467786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a08cc0e6e41%3A0xf5c698b65f8c52a7!2sZ%C3%BCrich%20HB!5e0!3m2!1sde!2sch!4v1698653251544!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <link rel="stylesheet" href="./../css/Standort.css" />
   </head>
 
   <body class="bg-204, 225, 232">
-    <div id="Standort_style">
-      <header id="kopfbereich"></header>
-
-      <nav class="navbar navbar-expand-lg bg-204, 225, 232">
-        <a href="./../html/Lernwebseite.html">
-          <img src="./../images/logo.png"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./../html/Formeln.html"
+          ><img src="./../Images/logo.png" alt="Logo"
         /></a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="./../html/Lernwebseite.html"
-                >Lernwebseite</a
-              >
+              <h4><a href="./../html/Formeln.html">Formeln</a></h4>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./../html/Formeln.html">Formeln</a>
+              <h4><a href="./../html/Standort.html">Standort</a></h4>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Standort.html">Standort</a>
+            <li>
+              <h4><a href="./../html/Tipps.html">Tipps</a></h4>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Tipps.html">Tipps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/kontakt.html">Kontakt</a>
+            <li>
+              <h4><a href="./../html/kontakt.html">Kontakt</a></h4>
             </li>
           </ul>
         </div>
-      </nav>
-
+      </div>
+    </nav>
+    <div id="Standort_style">
       <h1 id="zürimap">HB Zürich Map</h1>
 
       <div id="googleMap"></div>
