@@ -117,3 +117,47 @@ p {
 .Tipps_style {
   background-color: #c5ccf1;
 }
+
+#abschnitt1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin-left: 40%;
+  margin-top: 10px;
+  background-color: rgba(142, 234, 255, 0.608);
+
+}
+
+#inform {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+body {
+
+  background-image: url(https://images.pixexid.com/a-4k-ultra-hd-wallpaper-featuring-a-couple-sitting-on-a-swing-hanging-from-a-big-4m6fdjno.jpeg);
+  background-size: 100%;
+  
+}
+#inform_d {
+  border: solid black;
+  border-radius: 20px;
+  max-width: fit-content;
+  margin-left: 25%;
+  background-color:rgb(128, 255, 212, 0.75);
+
+}
+
+#mail_ccca {
+  color: black;
+
+}
+
