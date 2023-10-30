@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" href="./../css/Standort.css" />
-    <script src="./../Scripts/script.js"></script>
     <title>Standort</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -11,48 +9,56 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./../css/Standort.css"
+    <link rel="stylesheet" href="./../css/Design.css" />
   </head>
 
-  <body class="bg-204, 225, 232">
+  <body class="bg-204, 225, 232" id="zuerimap">
     <div id="Standort_style">
-      <header id="kopfbereich"></header>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./../html/Formeln.html"
+              ><img
+                src="./../Images/logo.png"
+                alt="Logo"
+                width="70"
+                height="70"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <nav class="navbar navbar-expand-lg bg-204, 225, 232">
-        <a href="./../html/Formeln.html"> <img src="./../images/logo.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Formeln.html">Formeln</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Standort.html">Standort</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/Tipps.html">Tipps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./../html/kontakt.html">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="./../html/Formeln.html">Formeln</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./../html/Standort.html">Standort</a>
+                </li>
+                <li>
+                  <a href="./../html/Tipps.html">Tipps</a>
+                </li>
+                <li>
+                  <a href="./../html/kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-      <div class="container">
-        <h1>HB Zürich Map</h1>
-
+      <div class="container" id="centered">
         <div>
+          <h1>HB Zürich Map</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.733883165071!2d8.532212496830523!3d47.37551538467786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a08cc0e6e41%3A0xf5c698b65f8c52a7!2sZ%C3%BCrich%20HB!5e0!3m2!1sde!2sch!4v1698653251544!5m2!1sde!2sch"
             width="550"
@@ -65,46 +71,57 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
-        <script>
-          function myMap() {
-            var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
-            var mapOptions = {
-              center: hbZurich,
-              zoom: 15,
-            };
-
-            var map = new google.maps.Map(
-              document.getElementById("googleMap"),
-              mapOptions
-            );
-
-            var marker = new google.maps.Marker({
-              position: hbZurich,
-              map: map,
-              title: "HB Zürich",
-            });
-          }
-
-          function initMap() {
-            myMap();
-          }
-        </script>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&callback=initMap"></script>
-
-        <div class="position-absolute bottom-0 start-50 translate-middle-x">
-          <h5>
+        <div>
+          <p>
             Wir sind sehr glücklich darüber, seit dem Jahr 2022 unseren Standort
-            am HB Zürich zu haben.<br />
+            am HB Zürich zu haben.
+          </p>
+          <p>
             Dort geben wir auch differente Kurse, seien es Geometrie oder
-            Algebra Kurse. Dazu aber mehr auf der Kontaktseite.<br />
+            Algebra Kurse. Dazu aber mehr auf der Kontaktseite.
+          </p>
+          <p>
             Ebenso besitzen wir einen kleinen Shop, wo wir Formelbücher und
-            Aufgabenhefter verkaufen.<br />
-            Kommen sie vorbei!<br /><br /><br /><br />
-          </h5>
+            Aufgabenhefter verkaufen.
+          </p>
+          <p>Kommen sie vorbei!</p>
         </div>
       </div>
+
+      <script>
+        function myMap() {
+          var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
+          var mapOptions = {
+            center: hbZurich,
+            zoom: 15,
+          };
+
+          var map = new google.maps.Map(
+            document.getElementById("googleMap"),
+            mapOptions
+          );
+
+          var marker = new google.maps.Marker({
+            position: hbZurich,
+            map: map,
+            title: "HB Zürich",
+          });
+        }
+
+        function initMap() {
+          myMap();
+        }
+      </script>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

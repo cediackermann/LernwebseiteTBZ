@@ -4,28 +4,6 @@
   padding: 0;
 }
 
-html {
-  height: 100%;
-}
-
-nav {
-  height: 10vh;
-}
-
-img {
-  height: 8vh;
-
-}
-
-.topright {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-}
 
 .containerc {
   position: relative;
@@ -41,39 +19,11 @@ img {
   margin: 0;
   padding: 0;
   background-image: url('background_ma.jpg');
-  /* Pfad zum Bild */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-h1 {
-  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
-  color: rgb(16, 15, 15)
-}
-
-h3 {
-  font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(18, 18, 18);
-}
-
-h4 {
-  color: rgb(18, 18, 18)
-}
-
-h6 {
-  color: rgb(18, 18, 18);
-}
-
-p {
-  font-size: 15px;
-}
-
-/* CSS-Regeln für das Container-Div */
 #formeln_style {
   width: 80%;
   margin: 0 auto;
-  /* Zentriert das Div horizontal auf der Seite */
   background-color: #f0f0f0;
   padding: 20px;
   border: 1px solid #ddd;
@@ -106,13 +56,6 @@ p {
 
 }
 
-body {
-
-  background-color: rgb(255, 0, 179);
-  background-size: 100%;
-
-}
-
 #inform_d {
   border: solid black;
   border-radius: 20px;
@@ -127,13 +70,35 @@ body {
 
 }
 
-li {
-  color: black;
-  text-decoration: none;
-  margin: 5%;
+@media(min-width : 991px) {
+  li {
+    color: black;
+    text-decoration: none;
+    margin: 5%;
+  }
 }
+
+
 
 a {
   color: black;
   text-decoration: none;
+}
+
+#centered {
+  text-align: center;
+}
+
+#zuerimap {
+  background-color: rgb(204, 225, 232);
+}
+
+#tipps {
+  background-color: rgb(217, 210, 236);
+}
+
+#kontakt {
+  background-color: rgb(220,
+      242,
+      234);
 }

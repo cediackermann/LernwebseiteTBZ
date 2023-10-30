@@ -72,7 +72,8 @@ image.container {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("background_ma.jpg"); /* Pfad zum Bild */
+  background-image: url("background_ma.jpg");
+  /* Pfad zum Bild */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -101,9 +102,9 @@ h6 {
 p {
   font-size: 15px;
 }
-body {
-  background-color: rgb(204, 225, 232);
-}
+
+body {}
+
 .iframe {
   --bs-gutter-x: 50rem;
 }
