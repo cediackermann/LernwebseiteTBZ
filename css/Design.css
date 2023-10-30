@@ -14,7 +14,7 @@ html {
 nav {
   height: 90px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 144);
 }
