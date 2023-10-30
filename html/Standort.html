@@ -12,7 +12,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./../css/Standort.css"
-    <iframe src="iframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.733883165071!2d8.532212496830523!3d47.37551538467786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a08cc0e6e41%3A0xf5c698b65f8c52a7!2sZ%C3%BCrich%20HB!5e0!3m2!1sde!2sch!4v1698653251544!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </head>
 
   <body class="bg-204, 225, 232">
@@ -20,9 +19,7 @@
       <header id="kopfbereich"></header>
 
       <nav class="navbar navbar-expand-lg bg-204, 225, 232">
-        <a href="./../html/Lernwebseite.html">
-          <img src="./../images/logo.png"
-        /></a>
+        <a href="./../html/Formeln.html"> <img src="./../images/logo.png" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,11 +33,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./../html/Lernwebseite.html"
-                >Lernwebseite</a
-              >
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="./../html/Formeln.html">Formeln</a>
             </li>
@@ -57,53 +49,61 @@
         </div>
       </nav>
 
-      <h1 id="zürimap">HB Zürich Map</h1>
+      <div class="container">
+        <h1>HB Zürich Map</h1>
 
-      <div id="googleMap"></div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.733883165071!2d8.532212496830523!3d47.37551538467786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a08cc0e6e41%3A0xf5c698b65f8c52a7!2sZ%C3%BCrich%20HB!5e0!3m2!1sde!2sch!4v1698653251544!5m2!1sde!2sch"
+            width="550"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            justify="centered"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-      <script>
-        function myMap() {
-          var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
+        <script>
+          function myMap() {
+            var hbZurich = new google.maps.LatLng(47.378177, 8.540192);
+            var mapOptions = {
+              center: hbZurich,
+              zoom: 15,
+            };
 
-          var mapOptions = {
-            center: hbZurich,
-            zoom: 15,
-          };
+            var map = new google.maps.Map(
+              document.getElementById("googleMap"),
+              mapOptions
+            );
 
-          var map = new google.maps.Map(
-            document.getElementById("googleMap"),
-            mapOptions
-          );
+            var marker = new google.maps.Marker({
+              position: hbZurich,
+              map: map,
+              title: "HB Zürich",
+            });
+          }
 
-          var marker = new google.maps.Marker({
-            position: hbZurich,
-            map: map,
-            title: "HB Zürich",
-          });
-        }
+          function initMap() {
+            myMap();
+          }
+        </script>
 
-        function initMap() {
-          myMap();
-        }
-      </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&callback=initMap"></script>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&callback=initMap"></script>
-
-      <h3>
-        Wir sind sehr glücklich darüber, seit dem Jahr 2022 unseren Standort am
-        HB Zürich zu haben.<br />
-        Dort geben wir auch differente Kurse, seien es Geometrie oder Algebra
-        Kurse. Dazu aber mehr auf der Kontaktseite.<br />
-        Ebenso besitzen wir einen kleinen Shop, wo wir Formelbücher und
-        Aufgabenhefter verkaufen.<br />
-        Kommen sie vorbei!<br /><br /><br /><br />
-      </h3>
-
-      <main id="hauptbereich">
-        <a href="#kopfbereich"> <em> Nach oben</em></a>
-      </main>
-
-      <footer id="fussbereich"></footer>
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+          <h5>
+            Wir sind sehr glücklich darüber, seit dem Jahr 2022 unseren Standort
+            am HB Zürich zu haben.<br />
+            Dort geben wir auch differente Kurse, seien es Geometrie oder
+            Algebra Kurse. Dazu aber mehr auf der Kontaktseite.<br />
+            Ebenso besitzen wir einen kleinen Shop, wo wir Formelbücher und
+            Aufgabenhefter verkaufen.<br />
+            Kommen sie vorbei!<br /><br /><br /><br />
+          </h5>
+        </div>
+      </div>
     </div>
   </body>
 </html>
