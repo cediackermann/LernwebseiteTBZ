@@ -45,3 +45,4 @@ function DiagonaleSeite() {
     let diagonaleSeite = (Math.sqrt(seite1 * seite1 + seite2 * seite2)).toFixed(2);
     document.getElementById("diagonaleOutput0").textContent = diagonaleSeite;
 }
+
